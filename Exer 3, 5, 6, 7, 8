@@ -1,0 +1,9 @@
+Exercicio 3: a) Está incorreto, na classe Y, cont não pode ser acessado, poís na classe X, ele está como privado, sendo assim só podendo ser acessado pela classe X.
+
+Exercicio 5: Está incorreto, construtores podem ter nomes iguais porém não podem ter suas declarações diferentes.
+
+Exercicio 6: Usando a palavra static.
+
+Exercicio 7: Deve ser usando o modificador privace.
+
+Exercicio 8: Por valor.
