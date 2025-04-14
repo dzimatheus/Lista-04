@@ -1,0 +1,47 @@
+public class Ponto2D {
+    private double x, y;
+    public static int contador = 0;
+
+    public Ponto2D(){
+        x = 0;
+        y = 0;
+    }
+
+    public Ponto2D(double x, double y){
+        this.x = x;
+        this.y = y;
+        ++contador;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public static int getcontador(){
+        return contador;
+    }
+}
+
+
+
+public class TestePonto2D {
+    public static void main(String[] args){
+        // Demonstração do construtor sem argumentos
+        Ponto2D origem = new Ponto2D();
+        System.out.println("Ponto na origem: " + origem.getX() + ", " + origem.getY());
+        
+        // Demonstração do construtor com argumentos
+        Ponto2D p1 = new Ponto2D(1.5, 2.5);
+        Ponto2D p2 = new Ponto2D(3.5, 4.5);
+        
+        System.out.println("Pontos criados:");
+        System.out.println("Ponto 1: (" + p1.getX() + ", " + p1.getY() + ")");
+        System.out.println("Ponto 2: (" + p2.getX() + ", " + p2.getY() + ")");
+        
+        System.out.println("Total de instancias criadas: " + Ponto2D.getcontador());
+    }
+}
